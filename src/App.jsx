@@ -1,12 +1,17 @@
 import './App.css';
-import { Routes, Route, HashRouter, NavLink } from 'react-router-dom';
+import { Routes, Route, HashRouter, NavLink, useNavigate } from 'react-router-dom';
 
 const Home = () => {
   return <p>這是首頁</p>;
 };
 
 const Todo = () => {
-  return <p>這是 Todo 頁面</p>;
+  return (
+    <div className='d-flex justify-content-between'>
+      <p>這是 Todo 頁面</p>
+      <Logout />
+    </div>
+  )
 };
 
 const Login = () => {
@@ -16,6 +21,11 @@ const Login = () => {
 const Register = () => {
   return <p>這是註冊頁面</p>;
 };
+
+const Logout = () => {
+  const navigate = useNavigate();
+  return <button type="button" className='btn btn-primary' onClick={() => { navigate('/login'); }}>登出</button>
+}
 
 function App() {
   return (

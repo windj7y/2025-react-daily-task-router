@@ -20,3 +20,27 @@
 .nav-link a:hover, .nav-link a:focus, .nav-link a:active {
   background-color:#4682b4;
 }
+.btn {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary {
+  color: white;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
